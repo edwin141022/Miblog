@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solicitud de Empleo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h1 {
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        td, th {
+            border: 1px solid #000;
+            padding: 5px;
+            text-align: left;
+        }
+        input[type="text"], input[type="number"], input[type="date"], input[type="tel"] {
+            width: 100%;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="color: darkgray;">Solicitud de Empleo</h1>
+
+    <form>
+        <table>
+            <tr>
+               
+                <td colspan="2">Puesto que solicita: <input type="text" name="puesto"></td>
+                <td>Fecha: <input type="date" name="fecha"></td>
+            </tr>
+            <tr>
+                <td>Sueldo Mensual Deseado: <input type="number" name="sueldo_deseado"></td>
+                <td>Sueldo Mensual Aprobado: <input type="number" name="sueldo_aprobado"></td>
+                <td>Fecha de Contratación: <input type="date" name="fecha_contratacion"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="6"><center>Datos Personales</center></th>
+            </tr>
+            <tr>
+                <td>Apellido Paterno: <input type="text" name="apellido_paterno"></td>
+                <td>Apellido Materno: <input type="text" name="apellido_materno"></td>
+                <td>Nombre(s): <input type="text" name="nombre"></td>
+                <td>Edad: <input type="number" name="edad"></td>
+            </tr>
+            <tr>
+                <td>Domicilio: <input type="text" name="domicilio"></td>
+                <td>Colonia: <input type="text" name="colonia"></td>
+                <td>Código Postal: <input type="number" name="codigo_postal"></td>
+                <td>Teléfono: <input type="tel" name="telefono"></td>
+            </tr>
+            <tr>
+                <td>Ciudad, Estado: <input type="text" name="ciudad_estado"></td>
+                <td>Lugar de Nacimiento: <input type="text" name="lugar_nacimiento"></td>
+                <td>Fecha de Nacimiento: <input type="date" name="fecha_nacimiento"></td>
+                <td>Nacionalidad: <input type="text" name="nacionalidad"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Sexo:
+                    <label><input type="radio" name="sexo" value="masculino"> Masculino</label>
+                    <label><input type="radio" name="sexo" value="femenino"> Femenino</label>
+                </td>
+                <td>Estatura: <input type="text" name="estatura"></td>
+                <td>Peso: <input type="text" name="peso"></td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    Vive con:
+                    <label><input type="checkbox" name="vive_con" value="padres"> Sus padres</label>
+                    <label><input type="checkbox" name="vive_con" value="familia"> Su familia</label>
+                    <label><input type="checkbox" name="vive_con" value="parientes"> Parientes</label>
+                    <label><input type="checkbox" name="vive_con" value="solo"> Solo</label>
+                </td>
+                <td>Estado Civil:
+                    <label><input type="radio" name="estado_civil" value="soltero"> Soltero</label>
+                    <label><input type="radio" name="estado_civil" value="casado"> Casado</label>
+                    <label><input type="radio" name="estado_civil" value="otro"> Otro</label>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="6"><center>Documentación</center></th>
+            </tr>
+            <tr>
+                <td>clave unica de rejistro de pobalcion <input type="text" name="curp"></td>
+                <td>AFORE: <input type="text" name="afore"></td>
+                
+                <td>No. de Seguro Social: <input type="text" name="seguro_social"></td>
+                <td>Cartilla Militar: <input type="text" name="cartilla_militar"></td>
+                <td>Pasaporte: <input type="text" name="pasaporte"></td>
+            </tr>
+            <tr>
+                <td colspan="2">¿Tiene licencia de manejo?
+                    <label><input type="radio" name="licencia" value="si"> Sí</label>
+                    <label><input type="radio" name="licencia" value="no"> No</label>
+                </td>
+                <td>Siendo extranjero que documentos le permiten trabajar en el pais <input type="text" name="afore"></td>
+                </td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="6"><center>Estado de Salud y Hábitos Personales</center></th>
+            </tr>
+            <tr>
+                <td>¿Cómo considera su estado de salud actual?
+                    <label><input type="radio" name="salud" value="bueno"> Bueno</label>
+                    <label><input type="radio" name="salud" value="regular"> Regular</label>
+                    <label><input type="radio" name="salud" value="malo"> Malo</label>
+                </td>
+                <td>¿Padece alguna enfermedad crónica?
+                    <label><input type="radio" name="enfermedad" value="no"> No</label>
+                    <label><input type="radio" name="enfermedad" value="si"> Sí</label> (Explique)
+                </td>
+            </tr>
+            <tr>
+                <td>¿Práctica algún deporte? <input type="text" name="deporte"></td>
+                <td>¿Permanece a algún Club Social o Deportivo? <input type="text" name="club"></td>
+            </tr>
+            <tr>
+                <td>¿Cuál es su meta en la vida? <input type="text" name="meta"></td>
+                <td>¿Cuál es su pasatiempo favorito? <input type="text" name="pasatiempo"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+                <th colspan="6"><center>Datos Familiares</center></th>
+            </tr>
+            <tr>
+                <td>Padre</td>
+                <td>Vive</td>
+                <td>Fin</td>
+                <td>Domicilio</td>
+                <td>Ocupación</td>
+            </tr>
+            <tr>
+                <td><input type="text" name="padre"></td>
+                <td><input type="text" name="padre_vive"></td>
+                <td><input type="text" name="padre_fin"></td>
+                <td><input type="text" name="padre_domicilio"></td>
+                <td><input type="text" name="padre_ocupacion"></td>
+            </tr>
+            <tr>
+                <td>Madre</td>
+                <td><input type="text" name="madre_vive"></td>
+                <td><input type="text" name="madre_fin"></td>
+                <td><input type="text" name="madre_domicilio"></td>
+                <td><input type="text" name="madre_ocupacion"></td>
+            </tr>
+            <tr>
+                <td>Esposa(o)</td>
+                <td><input type="text" name="esposa_vive"></td>
+                <td><input type="text" name="esposa_fin"></td>
+                <td><input type="text" name="esposa_domicilio"></td>
+                <td><input type="text" name="esposa_ocupacion"></td>
+            </tr>
+            <tr>
+                <td>Nombre y edades de los hijos: <input type="text" name="hijos"></td>
+            </tr>
+        </table>
+
+        <table>
+            <tr>
+               
+
